@@ -45,7 +45,6 @@ def _build_cluster_prompt(clusters: list[Cluster], top_n: int) -> str:
         )
     return "\n\n".join(parts)
 
-
 def generate_ai_summary(clusters: list[Cluster], top_n: int = 10) -> str | None:
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key or not clusters:
@@ -68,7 +67,6 @@ def generate_ai_summary(clusters: list[Cluster], top_n: int = 10) -> str | None:
         return "\n".join(text_blocks).strip() or None
     except Exception:
         return None
-
 
 def generate_report(clusters: list[Cluster], use_ai: bool = True, top_n: int = 20) -> str:
     reference = render_offline_report(clusters, top_n=top_n)
