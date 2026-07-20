@@ -7,9 +7,7 @@ which gets prepended to the report.
 """
 
 from __future__ import annotations
-
 import os
-
 from logsentry.clustering import Cluster
 
 SYSTEM_PROMPT = (
