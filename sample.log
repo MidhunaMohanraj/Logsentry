@@ -1,0 +1,12 @@
+2026-07-18 09:12:01 INFO Server started on port 8080
+2026-07-18 09:12:03 INFO Connected to db-primary:5432
+2026-07-18 09:14:22 ERROR Connection refused to db-primary:5432
+2026-07-18 09:14:25 ERROR Connection refused to db-primary:5432
+2026-07-18 09:14:29 ERROR Connection refused to db-replica:5432
+2026-07-18 09:15:01 WARN Retry attempt 1 for request id 'a1b2c3'
+2026-07-18 09:15:02 WARN Retry attempt 2 for request id 'd4e5f6'
+2026-07-18 09:16:10 ERROR NullPointerException at /app/src/handlers/order.py:88
+2026-07-18 09:16:12 ERROR NullPointerException at /app/src/handlers/order.py:88
+2026-07-18 09:16:45 ERROR NullPointerException at /app/src/handlers/order.py:92
+2026-07-18 09:17:00 INFO Health check passed
+2026-07-18 09:20:33 CRITICAL Out of memory: killed process 4821 (worker)
