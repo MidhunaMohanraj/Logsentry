@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 import click
-from logsentry.clustering import cluster_records
+from logsentry.clustering import cluster_records 
 from logsentry.generator import generate_report
 from logsentry.parser import parse_lines
 @click.command()
