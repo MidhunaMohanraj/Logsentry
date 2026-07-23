@@ -7,7 +7,7 @@ import click
 from logsentry.clustering import cluster_records 
 from logsentry.generator import generate_report
 from logsentry.parser import parse_lines
-@click.command()
+@click.command() 
 @click.argument("logfile", type=click.Path(exists=True, dir_okay=False, path_type=Path))
 @click.option("-o", "--output", type=click.Path(path_type=Path), default="log_report.md", help="Output Markdown file.")
 @click.option("--no-ai", is_flag=True, help="Skip the AI-generated root-cause summary.")
