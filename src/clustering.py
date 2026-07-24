@@ -19,7 +19,6 @@ NUMBER_RE = re.compile(r"\b\d+(\.\d+)?\b")
 QUOTED_RE = re.compile(r"'[^']*'|\"[^\"]*\"")
 PATH_RE = re.compile(r"(?:/[\w.\-]+){2,}")
 
-
 def normalize(message: str) -> str:
     text = message
     text = UUID_RE.sub("<uuid>", text)
