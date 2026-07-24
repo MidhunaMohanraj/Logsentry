@@ -5,7 +5,6 @@ file paths) with placeholders, then bucketing on the resulting template.
 This is the same basic idea used by tools like Drain/LogPai, simplified
 down to regex substitution since we don't need streaming/online updates.
 """
-
 from __future__ import annotations
 
 import re
