@@ -5,7 +5,6 @@ from logsentry.parser import parse_lines
 def test_normalize_replaces_numbers():
     assert normalize("Retry attempt 1 for request") == "Retry attempt <num> for request"
 
-
 def test_normalize_replaces_ip():
     assert normalize("Connect to 192.168.0.1 failed") == "Connect to <ip> failed"
 
