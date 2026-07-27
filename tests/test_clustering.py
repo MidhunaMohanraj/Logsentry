@@ -9,7 +9,6 @@ def test_normalize_replaces_numbers():
 def test_normalize_replaces_ip():
     assert normalize("Connect to 192.168.0.1 failed") == "Connect to <ip> failed"
 
-
 def test_normalize_replaces_uuid():
     text = "Job 123e4567-e89b-12d3-a456-426614174000 failed"
     assert normalize(text) == "Job <uuid> failed"
