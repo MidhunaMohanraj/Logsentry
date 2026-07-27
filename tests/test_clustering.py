@@ -13,7 +13,6 @@ def test_normalize_replaces_uuid():
     text = "Job 123e4567-e89b-12d3-a456-426614174000 failed"
     assert normalize(text) == "Job <uuid> failed"
 
-
 def test_normalize_replaces_quoted_strings():
     assert normalize("Retry for request id 'a1b2c3'") == "Retry for request id <str>"
 
