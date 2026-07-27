@@ -16,7 +16,6 @@ def test_normalize_replaces_uuid():
 def test_normalize_replaces_quoted_strings():
     assert normalize("Retry for request id 'a1b2c3'") == "Retry for request id <str>"
 
-
 def test_normalize_replaces_paths():
     # The path itself becomes <path>; the trailing line number is a
     # separate numeric token normalized to <num>.
